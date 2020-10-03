@@ -2,4 +2,12 @@
 
 using namespace std;
 
-cout<< "helloworld"<<endl;
+
+
+int main() {
+
+    string a = "HelloWorld!";
+    cout << a << endl;
+
+    return 0;
+}
