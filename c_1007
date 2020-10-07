@@ -1,1 +1,95 @@
-#in
+面向对象三要素：
+    封装，继承，多态
+
+//多态 Polymorphism
+
+"函数重载"，指的是：
+    使用多个同名的函数实现同一类的功能，但细节不同。
+    例：找出三个数中的最大数，但三个数的类型可能为
+    int double long
+        过去我们就需要分别设计三个函数，对应三种不同
+        类型的最大值的获取：
+
+        //能否将多个函数名统一呢？
+        int max1 (int a ,int b , int c);
+        double max2 (double a , double b ,double c);
+        long max3 (long a ,long b ,long c);
+
+
+"函数重载"（Function overloading）
+    简单来说，函数重载就是用同一个函数名定义类似的函数，分别完成不同的功能。
+    具体实现方式：
+    利用函数的参数个数和参数类型的不同来加以区分。
+
+    //syrup 糖浆
+
+    重载函数的规定
+    各重载函数的函数题可以不同
+    允许参数类型不同，也允许参数个数不同
+    不能只有函数类型不同而参数的个数和类型相同，如：
+        int f(int)
+        long f(int)
+        void f(int)
+    在主调函数中被调用时如过这么写，如：
+    
+    函数模版(（Function template)：
+        书上P14 . //Trident 三叉戟
+
+        这也是C++新增的特性
+        是对之前函数重载的进一步简化
+        建立一个通用函数
+        其函数类型和形参类型不具体指定
+
+
+    为什么要使用函数模版？
+    
+    ···
+    template <typename AnyType>
+    void Swao(AnyType a , AnyType b)
+    {
+        AnyType temp;
+        temp = a;
+        a = b ;
+        b = temp;
+    }
+
+    ···
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
